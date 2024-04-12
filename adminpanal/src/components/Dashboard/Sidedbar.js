@@ -38,7 +38,7 @@ export default class Sidedbar extends Component {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="" className="nav-link">
+                      <a href="/Manageuser" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                         <p>Manage Users</p>
                       </a>
@@ -47,18 +47,42 @@ export default class Sidedbar extends Component {
                 </li>
                 <li className="nav-item has-treeview">
                   <a href="" className="nav-link">
+                    <FontAwesomeIcon icon={faUsers} className="nav-icon" />
+                    <p>
+                      Groups
+                      <i className="fas fa-angle-left right" />
+                    </p>
+                  </a>
+                  <ul className="nav nav-treeview">
+                    <li className="nav-item">
+                      <a href="" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                        <p>Add Group</p>
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a href="/Managegroup" className="nav-link">
+                      <i className="far fa-circle nav-icon" />
+                        <p>Manage Groups</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li className="nav-item has-treeview">
+                  <a href="/Store" className="nav-link">
                     <FontAwesomeIcon icon={faStore} className="nav-icon" />
                     <p>Stores</p>
                   </a>
                 </li>
                 <li className="nav-item has-treeview">
-                  <a href="" className="nav-link">
+                  <a href="/Table" className="nav-link">
                     <FontAwesomeIcon icon={faFileAlt} className="nav-icon" />
                     <p>Tables</p>
                   </a>
                 </li>
                 <li className="nav-item has-treeview">
-                  <a href="" className="nav-link">
+                  <a href="/Category" className="nav-link">
                     <FontAwesomeIcon icon={faListAlt} className="nav-icon" />
                     <p>Category</p>
                   </a>
@@ -80,7 +104,7 @@ export default class Sidedbar extends Component {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="" className="nav-link">
+                      <a href="/Manageproduct" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                         <p>Manage Products</p>
                       </a>
@@ -104,7 +128,7 @@ export default class Sidedbar extends Component {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="" className="nav-link">
+                      <a href="/Manageorder" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                         <p>Manage Orders</p>
                       </a>

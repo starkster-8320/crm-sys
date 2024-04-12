@@ -3,6 +3,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Button } from 'react-bootstrap';
 import "./UserSetting.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
 
 const UserSetting = () => {
   const [password, setPassword] = useState('');
@@ -35,7 +37,9 @@ const UserSetting = () => {
             </div>
             <div className="col-sm-6">
               <ol className="breadcrumb float-sm-right">
-                <li className="breadcrumb-item"><a href="/Dashboard">Home</a></li>
+                <li className="breadcrumb-item"><a href="/Dashboard">
+              <FontAwesomeIcon icon={faTachometerAlt} className="nav-icon" />
+                Home</a></li>
                 <li className="breadcrumb-item active">Setting</li>
               </ol>
             </div>

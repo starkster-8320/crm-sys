@@ -4,6 +4,8 @@ import Select from 'react-select';
 import ReactQuill from 'react-quill'
 import "./AddProduct.css"
 import "react-quill/dist/quill.snow.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
 const option = [
   { value: "Computer", label: "Computer" },
 ];
@@ -82,8 +84,10 @@ const AddProduct = () => {
             </div>
             <div className="col-sm-6">
               <ol className="breadcrumb float-sm-right">
-                <li className="breadcrumb-item"><a href="/Dashboard">Home</a></li>
-                <li className="breadcrumb-item active">Users</li>
+                <li className="breadcrumb-item"><a href="/Dashboard">
+              <FontAwesomeIcon icon={faTachometerAlt} className="nav-icon" />
+                Home</a></li>
+                <li className="breadcrumb-item active">Product</li>
               </ol>
             </div>
           </div>

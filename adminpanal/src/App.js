@@ -13,6 +13,13 @@ import User from './components/User/User';
 import Company from './components/Company-Info/Company';
 import AddProduct from './components/Product/AddProduct';
 import Addorder from './components/Order/AddOrder';
+import ManageUserPage from './components/User/ManageUserPage';
+import Manageproduct from './components/Product/Manageproduct';
+import Manageorder from './components/Order/Manageorder';
+import Table from './components/Tables/Table';
+import Category from './components/Category/Category';
+import Store from './components/Store/Store';
+import Managegroup from './components/Group/Managegroup';
 
 function App() {
   return (
@@ -24,8 +31,15 @@ function App() {
           {/* <Route path='/' element={<Home/>}/> */}
             <Route path='/Dashboard' element={<Home />} />
             <Route path='/Adduser' element={<User/>}/>
+            <Route path='/Manageuser' element={<ManageUserPage/>}/>
+            <Route path='/Managegroup' element={<Managegroup/>}/>
+            <Route path='/Store' element={<Store/>}/>
+            <Route path='/Table' element={<Table/>}/>
+            <Route path='/Category' element={<Category/>}/>
             <Route path='/AddProduct' element={<AddProduct/>}/>
+            <Route path='/Manageproduct' element={<Manageproduct/>}/>
             <Route path='/AddOrder' element={<Addorder/>}/>
+            <Route path='/Manageorder' element={<Manageorder/>}/>
             <Route path='/Company-info' element={<Company/>}/>
             <Route path='/User-profile' element={<Profile/>} />
             <Route path='/Setting' element={<UserSetting/>}/>
@@ -47,8 +61,18 @@ function ProtectedRoute(){
       {/* <Route path='/' element={<Home/>}/> */}
             <Route path='/Dashboard' element={<Home />} />
             <Route path='/Adduser' element={<User/>}/>
+            <Route path='/Manageuser' element={<ManageUserPage/>}/>
+            <Route path='/Managegroup' element={<Managegroup/>}/>
+
+            <Route path='/Store' element={<Store/>}/>
+            <Route path='/Table' element={<Table/>}/>
+            <Route path='/Category' element={<Category/>}/>
+
             <Route path='/AddProduct' element={<AddProduct/>}/>
+            <Route path='/Manageproduct' element={<Manageproduct/>}/>
             <Route path='/AddOrder' element={<Addorder/>}/>
+            <Route path='/Manageorder' element={<Manageorder/>}/>
+
             <Route path='/Company-info' element={<Company/>}/>
             <Route path='/User-profile' element={<Profile/>} />
             <Route path='/Setting' element={<UserSetting/>}/>

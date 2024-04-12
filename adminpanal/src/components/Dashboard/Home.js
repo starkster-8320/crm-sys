@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
 export default class Home extends Component {
   render() {
     return (
@@ -14,7 +15,9 @@ export default class Home extends Component {
           </div>{/* /.col */}
           <div className="col-sm-6">
             <ol className="breadcrumb float-sm-right">
-              <li className="breadcrumb-item"><a href="#" className=''>Home</a></li>
+              <li className="breadcrumb-item"><a href="#" className=''>
+              <FontAwesomeIcon icon={faTachometerAlt} className="nav-icon" />
+              Home</a></li>
               <li className="breadcrumb-item active">Dashboard</li>
             </ol>
           </div>{/* /.col */}

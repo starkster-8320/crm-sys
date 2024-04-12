@@ -4,7 +4,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Form, Button } from 'react-bootstrap';
 import './User.css';
 import Select from 'react-select';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
 const option=[
   {value:"Manager",label:"Manager"},
   {value:"Sales",label:"Sales"},
@@ -110,7 +111,9 @@ export default function User() {
             </div>
             <div className="col-sm-6">
               <ol className="breadcrumb float-sm-right">
-                <li className="breadcrumb-item"><a href="/Dashboard">Home</a></li>
+                <li className="breadcrumb-item"><a href="/Dashboard">
+              <FontAwesomeIcon icon={faTachometerAlt} className="nav-icon" />
+                Home</a></li>
                 <li className="breadcrumb-item active">Users</li>
               </ol>
             </div>

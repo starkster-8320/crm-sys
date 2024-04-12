@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './UserProfile.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
 export default class Profile extends Component {
   render() {
     const user = {
@@ -22,7 +24,9 @@ export default class Profile extends Component {
           </div>{/* /.col */}
           <div className="col-sm-6">
             <ol className="breadcrumb float-sm-right">
-              <li className="breadcrumb-item"><a href="/Dashboard">Home</a></li>
+              <li className="breadcrumb-item"><a href="/Dashboard">
+              <FontAwesomeIcon icon={faTachometerAlt} className="nav-icon" />
+              Home</a></li>
               <li className="breadcrumb-item active">Profile</li>
             </ol>
           </div>{/* /.col */}
