@@ -20,6 +20,8 @@ import Table from './components/Tables/Table';
 import Category from './components/Category/Category';
 import Store from './components/Store/Store';
 import Managegroup from './components/Group/Managegroup';
+import ProductWise from './components/Reports/ProductWise';
+import StoreWise from './components/Reports/StoreWise';
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
             <Route path='/Manageproduct' element={<Manageproduct/>}/>
             <Route path='/AddOrder' element={<Addorder/>}/>
             <Route path='/Manageorder' element={<Manageorder/>}/>
+            <Route path='/Totalpaidorder' element={<ProductWise/>}/>
+            <Route path='/StoreWise' element={<StoreWise/>}/>
             <Route path='/Company-info' element={<Company/>}/>
             <Route path='/User-profile' element={<Profile/>} />
             <Route path='/Setting' element={<UserSetting/>}/>
@@ -72,6 +76,8 @@ function ProtectedRoute(){
             <Route path='/Manageproduct' element={<Manageproduct/>}/>
             <Route path='/AddOrder' element={<Addorder/>}/>
             <Route path='/Manageorder' element={<Manageorder/>}/>
+            <Route path='/Totalpaidorder' element={<ProductWise/>}/>
+            <Route path='/StoreWise' element={<StoreWise/>}/>
 
             <Route path='/Company-info' element={<Company/>}/>
             <Route path='/User-profile' element={<Profile/>} />

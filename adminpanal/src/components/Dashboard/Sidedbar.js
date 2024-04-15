@@ -146,13 +146,13 @@ export default class Sidedbar extends Component {
                   </a>
                   <ul className="nav nav-treeview">
                     <li className="nav-item">
-                      <a href="" className="nav-link">
+                      <a href="/Totalpaidorder" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                         <p>Product Wise</p>
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="" className="nav-link">
+                      <a href="/StoreWise" className="nav-link">
                       <i className="far fa-circle nav-icon" />
                         <p>Total Store Wise</p>
                       </a>
